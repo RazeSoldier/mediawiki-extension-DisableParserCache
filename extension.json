@@ -1,0 +1,28 @@
+{
+	"name": "DisableParserCache",
+	"author": "RazeSoldier",
+	"descriptionmsg": "disableparsercache-descriptionmsg",
+	"version": "1.0",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">=1.36.0"
+	},
+	"Hooks": {
+		"ArticleViewHeader": "ArticleViewHeaderHookHandler"
+	},
+	"HookHandlers": {
+		"ArticleViewHeaderHookHandler": {
+			"class": "RazeSoldier\\MWExt\\DisableParserCache\\ArticleViewHeaderHookHandler"
+		}
+	},
+	"AutoloadClasses": {
+		"RazeSoldier\\MWExt\\DisableParserCache\\ArticleViewHeaderHookHandler": "includes/ArticleViewHeaderHookHandler.php"
+	},
+	"MessagesDirs": {
+		"DisableParserCache": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}
